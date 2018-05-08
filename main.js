@@ -41,7 +41,8 @@ function main() {
   sync.run(function(err) {
     if(err) {
       console.log('Sync failed with error: ' + err)
+    } else {
+      console.log('Sync completed successfully.')
     }
-    console.log('Sync completed successfully.')
   });
 }
