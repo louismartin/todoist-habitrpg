@@ -131,7 +131,7 @@ habitSync.prototype.getTodoistSync = function(cb) {
   var self = this;
   var sync_token = history.sync_token || 0;
 
-  request.get('https://todoist.com/API/v7/sync')
+  request.post('https://todoist.com/API/v7/sync')
    .send('token=' + self.todoist)
    .send('sync_token=' + sync_token)
    .send('resource_types=["all"]')
