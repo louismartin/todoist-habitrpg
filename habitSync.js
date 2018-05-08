@@ -159,6 +159,7 @@ habitSync.prototype.syncItemsToHabitRpg = function(items, cb) {
           text: item.todoist.content,
           dateCreated: new Date(item.todoist.date_added),
           date: dueDate,
+          priority: "1.5",
           type: taskType.type,
           repeat: taskType.repeat,
           completed: item.todoist.checked == true
